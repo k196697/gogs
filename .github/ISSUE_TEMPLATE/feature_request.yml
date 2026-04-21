@@ -1,47 +1,64 @@
-name: Feature request
-description: Suggest an idea for this project
-labels: ["\U0001F3AF feature"]
+name: Feature Request
+description: Suggest an idea or enhancement for Gogs
+labels: ["type: feature"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this form!
-        
-        - Please use English :)
-        - For questions, ask in [Discussions](https://github.com/gogs/gogs/discussions).
-        - Before you file an issue read the [Contributing guide](https://github.com/gogs/gogs/blob/main/.github/CONTRIBUTING.md).
-        - Check to make sure someone hasn't already opened a similar [issue](https://github.com/gogs/gogs/issues).
-  - type: textarea
+        Thanks for taking the time to suggest a feature! Please fill out the form below as completely as possible.
+
+  - type: checkboxes
+    id: prerequisites
     attributes:
-      label: Describe the feature
-      description: A clear and concise description of what the feature is, e.g. I think it is reasonable to have [...]
-    validations:
-      required: true
+      label: Prerequisites
+      description: Please confirm the following before submitting a feature request.
+      options:
+        - label: I have searched the [existing issues](https://github.com/gogs/gogs/issues) and this feature has not been requested before.
+          required: true
+        - label: I have checked the [project roadmap](https://github.com/gogs/gogs/issues?q=is%3Aopen+is%3Aissue+label%3A%22type%3A+roadmap%22) and this is not already planned.
+          required: true
+
   - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is.
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
     attributes:
       label: Describe the solution you'd like
       description: A clear and concise description of what you want to happen.
+      placeholder: Describe the feature you'd like to see implemented.
     validations:
       required: true
+
   - type: textarea
+    id: alternatives
     attributes:
       label: Describe alternatives you've considered
       description: A clear and concise description of any alternative solutions or features you've considered.
     validations:
+      required: false
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How important is this feature to you?
+      options:
+        - Nice to have
+        - Would significantly improve my workflow
+        - Blocking my use of Gogs
+    validations:
       required: true
+
   - type: textarea
+    id: context
     attributes:
       label: Additional context
-      description: |
-        Links? References? Suggestions? Anything that will give us more context about the feature you are requesting!
-
-        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+      description: Add any other context, screenshots, or examples about the feature request here.
     validations:
       required: false
-  - type: checkboxes
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://go.dev/conduct)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
