@@ -1,16 +1,49 @@
-## Describe the pull request
+## Description
 
-A clear and concise description of what the pull request is about, i.e. what problem should be fixed? 
+Please provide a clear and concise description of what this PR does.
 
-Link to the issue: <!-- paste the issue link here, or put "n/a" if not applicable -->
+Fixes #(issue number)
+
+## Type of Change
+
+Please check the relevant option(s):
+
+- [ ] Bug fix (non-breaking change that fixes an issue)
+- [ ] New feature (non-breaking change that adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+- [ ] Refactoring (no functional changes)
+- [ ] Performance improvement
+- [ ] Test addition or update
+
+## How Has This Been Tested?
+
+Describe the tests you ran to verify your changes. Provide instructions so reviewers can reproduce.
+
+- [ ] Unit tests
+- [ ] Integration tests
+- [ ] Manual testing
+
+**Test Configuration:**
+- Go version:
+- OS:
+- Database:
 
 ## Checklist
 
-- [ ] I agree to follow the [Code of Conduct](https://go.dev/conduct) by submitting this pull request.
-- [ ] I have read and acknowledge the [Contributing guide](https://github.com/gogs/gogs/blob/main/.github/CONTRIBUTING.md).
-- [ ] I have added test cases to cover the new code or have provided the test plan. (if applicable)
-- [ ] I have added an entry to [CHANGELOG](https://github.com/gogs/gogs/blob/main/CHANGELOG.md). (if applicable)
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes
+- [ ] Any dependent changes have been merged and published
 
-## Test plan
+## Screenshots (if applicable)
 
-<!-- Please provide concrete but concise steps to proof things are working as stated, see an example in https://github.com/gogs/gogs/pull/7345 -->
+Add screenshots to help explain your changes if relevant.
+
+## Additional Notes
+
+Add any other context about the PR here.
