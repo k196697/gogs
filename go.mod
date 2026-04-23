@@ -31,8 +31,8 @@ require (
 	github.com/unknwon/i18n v0.0.0-20210904045753-ff3a8617e361
 	github.com/unknwon/paginater v0.0.0-20200328080006-042474468f64
 	github.com/urfave/cli v1.22.14
-	golang.org/x/crypto v0.17.0
-	golang.org/x/net v0.19.0
+	golang.org/x/crypto v0.21.0
+	golang.org/x/net v0.23.0
 	golang.org/x/text v0.14.0
 	gopkg.in/ini.v1 v1.67.0
 	gopkg.in/macaron.v1 v1.5.0
