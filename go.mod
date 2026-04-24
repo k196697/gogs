@@ -47,3 +47,5 @@ require (
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+// Personal fork - updated crypto and net to latest patch versions for security fixes
