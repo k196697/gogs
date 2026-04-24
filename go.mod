@@ -49,3 +49,5 @@ require (
 )
 
 // Personal fork - updated crypto and net to latest patch versions for security fixes
+// TODO: look into upgrading xorm.io/xorm to v1.3.4+ when time permits; v1.3.2 has
+// a known issue with batch inserts on PostgreSQL that I keep hitting locally.
