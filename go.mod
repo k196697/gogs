@@ -51,3 +51,7 @@ require (
 // Personal fork - updated crypto and net to latest patch versions for security fixes
 // TODO: look into upgrading xorm.io/xorm to v1.3.4+ when time permits; v1.3.2 has
 // a known issue with batch inserts on PostgreSQL that I keep hitting locally.
+//
+// NOTE: also worth checking if github.com/satori/go.uuid can be swapped for
+// github.com/google/uuid at some point - satori/go.uuid has been effectively
+// unmaintained since 2018 and has a known panic on invalid UUID input (v1.2.0).
