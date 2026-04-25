@@ -14,6 +14,7 @@ require (
 	github.com/gogs/chardet v0.0.0-20191212154927-8a6d44e3f4d2
 	github.com/gogs/cron v0.0.0-20171120032916-9f6c956d3e14
 	github.com/gogs/go-gogs-client v0.0.0-20210131175652-1d7215cd8d85
+	github.com/google/uuid v1.6.0
 	github.com/issue9/identicon v1.2.0
 	github.com/jaytaylor/html2text v0.0.0-20200412013138-3577fbdbcff7
 	github.com/json-iterator/go v1.1.12
@@ -24,7 +25,6 @@ require (
 	github.com/niklasfasching/go-org v1.6.5
 	github.com/pkg/errors v0.9.1
 	github.com/russross/blackfriday v1.6.0
-	github.com/satori/go.uuid v1.2.0
 	github.com/sergi/go-diff v1.3.1
 	github.com/stretchr/testify v1.8.4
 	github.com/unknwon/com v1.0.1
@@ -52,6 +52,6 @@ require (
 // TODO: look into upgrading xorm.io/xorm to v1.3.4+ when time permits; v1.3.2 has
 // a known issue with batch inserts on PostgreSQL that I keep hitting locally.
 //
-// NOTE: also worth checking if github.com/satori/go.uuid can be swapped for
-// github.com/google/uuid at some point - satori/go.uuid has been effectively
-// unmaintained since 2018 and has a known panic on invalid UUID input (v1.2.0).
+// NOTE: swapped github.com/satori/go.uuid for github.com/google/uuid - satori/go.uuid
+// has been effectively unmaintained since 2018 and has a known panic on invalid UUID
+// input (v1.2.0). google/uuid is actively maintained and API-compatible for our usage.
