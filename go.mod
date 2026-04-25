@@ -55,3 +55,7 @@ require (
 // NOTE: swapped github.com/satori/go.uuid for github.com/google/uuid - satori/go.uuid
 // has been effectively unmaintained since 2018 and has a known panic on invalid UUID
 // input (v1.2.0). google/uuid is actively maintained and API-compatible for our usage.
+//
+// TODO: consider replacing xorm.io/core (archived/unmaintained since ~2020) with the
+// functionality bundled in newer xorm.io/xorm releases directly - blocked on the xorm
+// upgrade above.
